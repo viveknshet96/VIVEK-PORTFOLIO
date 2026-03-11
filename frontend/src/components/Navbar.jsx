@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <>
       <nav id="nav" className={scrolled ? 'scrolled' : ''}>
-        <a className="nav-logo" href="#">V<span>.</span></a>
+        <a className="nav-logo" href="#">VNS<span>.</span></a>
 
         {/* Desktop links */}
         <ul className="nav-links">
