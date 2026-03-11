@@ -37,11 +37,11 @@ nav.scrolled{height:58px;box-shadow:0 4px 40px rgba(0,0,0,.5);}
 .btn-gold:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 32px rgba(212,168,67,.35);}
 .btn-outline{display:inline-flex;align-items:center;background:transparent;color:var(--text);font-size:14px;font-weight:600;padding:13px 30px;border-radius:10px;border:1px solid var(--border2);text-decoration:none;transition:all .25s;}
 .btn-outline:hover{border-color:var(--gborder);color:var(--gold2);background:var(--gdim);transform:translateY(-2px);}
-.hero-stats{display:flex;gap:80px;justify-content:center;opacity:0;animation:fadeUp .7s ease 1.05s forwards;}
-.stat{text-align:center;}
-.stat-num{font-family:var(--serif);font-size:44px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px;letter-spacing:-1px;}
-.stat-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
-.sdiv{width:1px;background:var(--border);}
+.hero-stats{display:flex;gap:clamp(24px,6vw,80px);justify-content:center;opacity:0;animation:fadeUp .7s ease 1.05s forwards;flex-wrap:wrap;width:100%;padding:0 20px;}
+.stat{text-align:center;min-width:80px;}
+.stat-num{font-family:var(--serif);font-size:clamp(32px,7vw,44px);font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px;letter-spacing:-1px;}
+.stat-label{font-size:clamp(9px,2vw,11px);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+.sdiv{width:1px;background:var(--border);align-self:stretch;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
 /* LAYOUT */
@@ -169,8 +169,8 @@ footer{border-top:1px solid var(--border);padding:28px 56px;display:flex;justify
   .section{padding:72px 0;}
   .skills-grid,.proj-grid,.cert-grid,.edu-grid{grid-template-columns:1fr;}
   .cc-grid{grid-template-columns:1fr 1fr;}
-  .hero-stats{gap:40px;}
-  .info-grid{grid-template-columns:1fr 1fr;}
+  .hero-stats{gap:clamp(16px,5vw,40px);padding:0 16px;}
+  .sdiv{display:none;}  .info-grid{grid-template-columns:1fr 1fr;}
   footer{flex-direction:column;gap:8px;text-align:center;padding:20px;}
 }
 @media(max-width:480px){
