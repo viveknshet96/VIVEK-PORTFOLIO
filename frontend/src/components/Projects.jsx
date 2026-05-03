@@ -23,16 +23,16 @@ const projects = [
     tags: ['YOLOv5', 'Streamlit', 'Computer Vision', 'Python'],
   },
   {
-    icon: '📁',
-    name: 'File Sharing Website',
-    type: 'Full Stack',
-    delay: 'd2',
+    icon: '🧠',
+    name: 'AI Tutor Chatbot',
+    type: 'Generative AI',
+    delay: 'd1',
     points: [
-      'Built a full-stack file-sharing web application with secure upload, storage, and sharing using Multer + GridFS for large media files.',
-      'Developed QR-code and unique code-based retrieval for fast and seamless file access from any device.',
-      'Implemented JWT authentication with login/register/guest modes and RESTful Express.js APIs for all CRUD operations.',
+      'Built a Retrieval-Augmented Generation (RAG) system using FAISS and Gemini API for context-aware Q&A.',
+      'Implemented pipeline with PyMuPDF, semantic chunking, and embeddings for efficient document retrieval.',
+      'Developed Streamlit chat interface for real-time responses with improved accuracy and reduced hallucination.',
     ],
-    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Multer'],
+    tags: ['Python', 'RAG', 'FAISS', 'Streamlit', 'LLM'],
   },
 ]
 
